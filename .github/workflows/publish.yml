@@ -86,9 +86,9 @@ jobs:
           test -f dist/credentials/FeishuProjectApi.credentials.js && echo "✅ FeishuProjectApi.credentials.js exists"
           test -f dist/package.json && echo "✅ dist/package.json exists"
 
-      - name: 发布到NPM
+      - name: 发布到NPM（带可信任发布）
         run: |
-          npm publish
+          npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -162,9 +162,9 @@ jobs:
           \`\`\`
 
           ### 🔗 相关链接
-          - [📖 使用文档](https://github.com/luka-mimi/n8n-nodes-feishu-project#readme)
+          - [📖 使用文档](https://github.com/luka-n8n-nodes/n8n-nodes-feishu-project#readme)
           - [📦 NPM包](https://www.npmjs.com/package/@luka-cat-mimi/n8n-nodes-feishu-project)
-          - [🐛 问题反馈](https://github.com/luka-mimi/n8n-nodes-feishu-project/issues)"
+          - [🐛 问题反馈](https://github.com/luka-n8n-nodes/n8n-nodes-feishu-project/issues)"
 
           echo "CHANGELOG<<EOF" >> $GITHUB_OUTPUT
           echo "$CHANGELOG" >> $GITHUB_OUTPUT
@@ -186,5 +186,5 @@ jobs:
         run: |
           echo "🎉 发布成功！"
           echo "📦 NPM包: https://www.npmjs.com/package/@luka-cat-mimi/n8n-nodes-feishu-project"
-          echo "🚀 GitHub Release: https://github.com/luka-mimi/n8n-nodes-feishu-project/releases/tag/${{ env.NEW_VERSION }}"
+          echo "🚀 GitHub Release: https://github.com/luka-n8n-nodes/n8n-nodes-feishu-project/releases/tag/${{ env.NEW_VERSION }}"
           echo "📋 安装命令: npm install @luka-cat-mimi/n8n-nodes-feishu-project"

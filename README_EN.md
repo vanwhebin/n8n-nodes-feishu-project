@@ -209,7 +209,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) fi
 ## 🆘 Support
 
 - 📧 Email: **luka.cat.mimi@gmail.com**
-- 🐛 Issue Feedback: [GitHub Issues](https://github.com/luka-mimi/n8n-nodes-feishu-project/issues)
+- 🐛 Issue Feedback: [GitHub Issues](https://github.com/luka-n8n-nodes/n8n-nodes-feishu-project/issues)
 - 📖 Feishu Project API Documentation: [Official Documentation](https://project.feishu.cn/b/helpcenter/1p8d7djs/4bsmoql6)
 
 ## ⭐ Acknowledgments

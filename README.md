@@ -209,7 +209,7 @@ npm run format
 ## 🆘 支持
 
 - 📧 邮箱：**luka.cat.mimi@gmail.com**
-- 🐛 问题反馈：[GitHub Issues](https://github.com/luka-mimi/n8n-nodes-feishu-project/issues)
+- 🐛 问题反馈：[GitHub Issues](https://github.com/luka-n8n-nodes/n8n-nodes-feishu-project/issues)
 - 📖 飞书项目API文档：[官方文档](https://project.feishu.cn/b/helpcenter/1p8d7djs/4bsmoql6)
 
 ## ⭐ 致谢
