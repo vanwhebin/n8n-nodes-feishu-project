@@ -21,7 +21,7 @@ class ResourceBuilder {
 
 	build(): INodeProperties[] {
 		// 构建 Operations
-		let list: INodeProperties[] = [];
+		const list: INodeProperties[] = [];
 
 		list.push({
 			displayName: 'Resource',
@@ -63,7 +63,7 @@ class ResourceBuilder {
 			});
 
 			for (const operation of resource.operations) {
-				for (let option of operation.options) {
+				for (const option of operation.options) {
 					// @ts-ignore
 					list.push({
 						...option,

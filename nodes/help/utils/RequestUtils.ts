@@ -16,7 +16,7 @@ class RequestUtils {
 		if (options.json === undefined) options.json = true;
 		return RequestUtils.originRequest.call(this, options).then((data) => {
 			const handleResponse = (response: any) => {
-				let isNormalCode = response?.err_code === 0 || response?.error?.code === 0 || response?.err?.code === 0
+				const isNormalCode = response?.err_code === 0 || response?.error?.code === 0 || response?.err?.code === 0
 				if (isNormalCode) {
 					return response
 				}
