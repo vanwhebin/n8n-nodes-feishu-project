@@ -1,6 +1,5 @@
-import { INodePropertyOptions } from 'n8n-workflow/dist/Interfaces';
+import { INodePropertyOptions, INodeProperties } from 'n8n-workflow';
 import { IResource, ResourceOperations } from '../type/IResource';
-import { INodeProperties } from 'n8n-workflow';
 
 class ResourceBuilder {
 	resources: IResource[] = [];
